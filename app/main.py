@@ -1,0 +1,155 @@
+import os
+import time
+from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
+
+from app.models.schemas import (
+    SupplierExtractionRequest, 
+    SupplierExtractionResponse, 
+    Supplier,
+    HealthResponse
+)
+from app.services.search import GoogleSearchService
+from app.services.extraction import VertexAIExtractionService
+from app.services.storage import FirestoreService
+from app.utils.deduplication import SupplierDeduplicator
+
+# Load environment variables
+load_dotenv()
+
+app = FastAPI(
+    title="Lazy Logistics - Supplier Extraction API",
+    description="Extract supplier information for companies using GCP and Vertex AI",
+    version="1.0.0"
+)
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Initialize services
+try:
+    search_service = GoogleSearchService()
+    extraction_service = VertexAIExtractionService()
+    storage_service = FirestoreService()
+    deduplicator = SupplierDeduplicator()
+except Exception as e:
+    print(f"Failed to initialize services: {e}")
+    search_service = None
+    extraction_service = None
+    storage_service = None
+    deduplicator = None
+
+@app.get("/health", response_model=HealthResponse)
+async def health_check():
+    """Health check endpoint."""
+    return HealthResponse(status="healthy")
+
+@app.post("/extract-suppliers", response_model=SupplierExtractionResponse)
+async def extract_suppliers(request: SupplierExtractionRequest):
+    """Extract supplier information for a given company."""
+    
+    if not all([search_service, extraction_service, storage_service, deduplicator]):
+        raise HTTPException(status_code=500, detail="Services not properly initialized")
+    
+    start_time = time.time()
+    
+    try:
+        # Check cache first
+        cached_result = storage_service.get_cached_result(request.company_name)
+        if cached_result:
+            return SupplierExtractionResponse(
+                company_name=request.company_name,
+                suppliers=[Supplier(**s) for s in cached_result["suppliers"]],
+                total_suppliers=cached_result["total_suppliers"],
+                processing_time=cached_result["processing_time"]
+            )
+        
+        # Search for company information
+        search_results = search_service.search_company_suppliers(
+            request.company_name, 
+            request.max_results
+        )
+        
+        if not search_results:
+            return SupplierExtractionResponse(
+                company_name=request.company_name,
+                suppliers=[],
+                total_suppliers=0,
+                processing_time=time.time() - start_time
+            )
+        
+        # Extract suppliers from search results
+        raw_suppliers = extraction_service.extract_suppliers_from_search_results(
+            request.company_name, 
+            search_results
+        )
+        
+        # Deduplicate suppliers
+        deduplicated_suppliers = deduplicator.deduplicate_suppliers(raw_suppliers)
+        
+        # Convert to Pydantic models
+        supplier_models = [Supplier(**s) for s in deduplicated_suppliers]
+        
+        processing_time = time.time() - start_time
+        
+        # Store result for audit trail
+        storage_service.store_extraction_result(
+            request.company_name,
+            [s.dict() for s in supplier_models],
+            processing_time,
+            search_results
+        )
+        
+        # Cache result
+        storage_service.cache_result(
+            request.company_name,
+            [s.dict() for s in supplier_models],
+            processing_time
+        )
+        
+        return SupplierExtractionResponse(
+            company_name=request.company_name,
+            suppliers=supplier_models,
+            total_suppliers=len(supplier_models),
+            processing_time=processing_time
+        )
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Extraction failed: {str(e)}")
+
+@app.get("/history/{company_name}")
+async def get_extraction_history(company_name: str, limit: int = 10):
+    """Get extraction history for a company."""
+    
+    if not storage_service:
+        raise HTTPException(status_code=500, detail="Storage service not initialized")
+    
+    try:
+        history = storage_service.get_extraction_history(company_name, limit)
+        return {"company_name": company_name, "history": history}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to get history: {str(e)}")
+
+@app.get("/statistics")
+async def get_statistics():
+    """Get basic statistics about extractions."""
+    
+    if not storage_service:
+        raise HTTPException(status_code=500, detail="Storage service not initialized")
+    
+    try:
+        stats = storage_service.get_statistics()
+        return stats
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to get statistics: {str(e)}")
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000) 
