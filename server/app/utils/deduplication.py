@@ -38,20 +38,23 @@ class SupplierDeduplicator:
         # Convert to lowercase
         normalized = name.lower()
         
-        # Remove common business suffixes
+        # Replace hyphens and other separators with spaces
+        normalized = re.sub(r'[-_&]', ' ', normalized)
+        
+        # Remove extra whitespace and punctuation (except spaces)
+        normalized = re.sub(r'[^\w\s]', '', normalized)
+        normalized = re.sub(r'\s+', ' ', normalized).strip()
+        
+        # Remove common business suffixes only if at the end
         suffixes = [
-            r'\s+inc\.?$', r'\s+corp\.?$', r'\s+llc$', r'\s+ltd\.?$', 
-            r'\s+limited$', r'\s+company$', r'\s+co\.?$', r'\s+group$',
-            r'\s+international$', r'\s+intl\.?$', r'\s+technologies$',
-            r'\s+tech$', r'\s+systems$', r'\s+solutions$'
+            r' inc\.?$', r' corp\.?$', r' llc$', r' ltd\.?$', 
+            r' limited$', r' co\.?$', r' group$',
+            r' international$', r' intl\.?$', r' technologies$',
+            r' tech$', r' systems$', r' solutions$'
         ]
         
         for suffix in suffixes:
             normalized = re.sub(suffix, '', normalized)
-        
-        # Remove extra whitespace and punctuation
-        normalized = re.sub(r'[^\w\s]', '', normalized)
-        normalized = re.sub(r'\s+', ' ', normalized).strip()
         
         return normalized
     
@@ -112,7 +115,7 @@ class SupplierDeduplicator:
         
         merged = {
             "name": best_supplier["name"],
-            "confidence": avg_confidence,
+            "confidence": round(avg_confidence, 2),  # Round to avoid floating point issues
             "source_url": all_sources[0] if all_sources else None,
             "context": "; ".join(all_contexts) if all_contexts else None
         }

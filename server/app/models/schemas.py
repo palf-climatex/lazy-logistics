@@ -1,10 +1,17 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 from typing import List, Optional
-from datetime import datetime
+from datetime import datetime, UTC
 
 class SupplierExtractionRequest(BaseModel):
     company_name: str = Field(..., description="Name of the company to extract suppliers for")
     max_results: int = Field(default=10, description="Maximum number of search results to process")
+    
+    @field_validator('company_name')
+    @classmethod
+    def validate_company_name(cls, v: str) -> str:
+        if not v or not v.strip():
+            raise ValueError('Company name cannot be empty')
+        return v.strip()
 
 class Supplier(BaseModel):
     name: str = Field(..., description="Supplier company name")
@@ -17,8 +24,8 @@ class SupplierExtractionResponse(BaseModel):
     suppliers: List[Supplier]
     total_suppliers: int
     processing_time: float
-    timestamp: datetime = Field(default_factory=datetime.utcnow)
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(UTC))
 
 class HealthResponse(BaseModel):
     status: str
-    timestamp: datetime = Field(default_factory=datetime.utcnow) 
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(UTC)) 

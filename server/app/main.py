@@ -76,6 +76,7 @@ async def extract_suppliers(request: SupplierExtractionRequest):
             request.company_name, 
             request.max_results
         )
+        print("[DEBUG] Google Search Results:", search_results)
         
         if not search_results:
             return SupplierExtractionResponse(
@@ -86,13 +87,17 @@ async def extract_suppliers(request: SupplierExtractionRequest):
             )
         
         # Extract suppliers from search results
+        print("[DEBUG] Extraction input:", search_results)
         raw_suppliers = extraction_service.extract_suppliers_from_search_results(
             request.company_name, 
             search_results
         )
+        print("[DEBUG] Extraction output:", raw_suppliers)
         
         # Deduplicate suppliers
+        print("[DEBUG] Deduplication input:", raw_suppliers)
         deduplicated_suppliers = deduplicator.deduplicate_suppliers(raw_suppliers)
+        print("[DEBUG] Deduplication output:", deduplicated_suppliers)
         
         # Convert to Pydantic models
         supplier_models = [Supplier(**s) for s in deduplicated_suppliers]
@@ -102,7 +107,7 @@ async def extract_suppliers(request: SupplierExtractionRequest):
         # Store result for audit trail
         storage_service.store_extraction_result(
             request.company_name,
-            [s.dict() for s in supplier_models],
+            [s.model_dump() for s in supplier_models],
             processing_time,
             search_results
         )
@@ -110,7 +115,7 @@ async def extract_suppliers(request: SupplierExtractionRequest):
         # Cache result
         storage_service.cache_result(
             request.company_name,
-            [s.dict() for s in supplier_models],
+            [s.model_dump() for s in supplier_models],
             processing_time
         )
         

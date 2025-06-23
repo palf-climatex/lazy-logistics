@@ -84,8 +84,14 @@ class TestAPIEndpoints:
         assert data["suppliers"][0]["name"] == "ABC Corp"
     
     @patch('app.main.search_service')
-    def test_extract_suppliers_no_results(self, mock_search):
+    @patch('app.main.extraction_service')
+    @patch('app.main.storage_service')
+    @patch('app.main.deduplicator')
+    def test_extract_suppliers_no_results(self, mock_deduplicator, mock_storage, mock_extraction, mock_search):
         """Test supplier extraction with no search results."""
+        # Mock cache miss
+        mock_storage.get_cached_result.return_value = None
+        
         # Mock empty search results
         mock_search.search_company_suppliers.return_value = []
         

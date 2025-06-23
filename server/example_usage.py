@@ -6,9 +6,23 @@ Example usage of the Lazy Logistics Supplier Extraction API
 import requests
 import json
 import time
+import os
+from app.models.schemas import SupplierExtractionRequest, Supplier
+from app.services.search import GoogleSearchService
+from app.services.extraction import VertexAIExtractionService
+from app.services.storage import FirestoreService
+from app.utils.deduplication import SupplierDeduplicator
+from dotenv import load_dotenv
 
 # API configuration
 API_BASE_URL = "http://localhost:8000"  # Change to your deployed URL
+
+load_dotenv()
+
+search_service = GoogleSearchService()
+extraction_service = VertexAIExtractionService()
+storage_service = FirestoreService()
+deduplicator = SupplierDeduplicator()
 
 def test_health_check():
     """Test the health check endpoint."""
@@ -115,4 +129,35 @@ def main():
     print("Example usage completed!")
 
 if __name__ == "__main__":
-    main() 
+    main()
+
+company_name = "Tesco"
+max_results = 5
+
+print(f"[DEBUG] Running pipeline for: {company_name}")
+
+start_time = time.time()
+
+# 1. Google Search
+search_results = search_service.search_company_suppliers(company_name, max_results)
+print("[DEBUG] Google Search Results:", search_results)
+
+if not search_results:
+    print("No search results.")
+    exit(0)
+
+# 2. Vertex AI Extraction
+print("[DEBUG] Extraction input:", search_results)
+raw_suppliers = extraction_service.extract_suppliers_from_search_results(company_name, search_results)
+print("[DEBUG] Extraction output:", raw_suppliers)
+
+# 3. Deduplication
+print("[DEBUG] Deduplication input:", raw_suppliers)
+deduplicated_suppliers = deduplicator.deduplicate_suppliers(raw_suppliers)
+print("[DEBUG] Deduplication output:", deduplicated_suppliers)
+
+# 4. Final output
+supplier_models = [Supplier(**s) for s in deduplicated_suppliers]
+processing_time = time.time() - start_time
+print(f"[DEBUG] Final suppliers: {supplier_models}")
+print(f"[DEBUG] Processing time: {processing_time:.2f}s") 

@@ -2,7 +2,7 @@ import os
 import json
 from typing import List, Dict, Any
 from google.cloud import aiplatform
-from vertexai.language_models import TextGenerationModel
+from vertexai.generative_models import GenerativeModel
 
 class VertexAIExtractionService:
     def __init__(self):
@@ -12,7 +12,7 @@ class VertexAIExtractionService:
         
         # Initialize Vertex AI
         aiplatform.init(project=self.project_id)
-        self.model = TextGenerationModel.from_pretrained("gemini-1.5-pro")
+        self.model = GenerativeModel("gemini-2.0-flash-001")
     
     def extract_suppliers_from_text(self, company_name: str, text_content: str, source_url: str = "") -> List[Dict[str, Any]]:
         """Extract supplier names from text content using Vertex AI Gemini."""
@@ -20,11 +20,17 @@ class VertexAIExtractionService:
         prompt = self._build_extraction_prompt(company_name, text_content, source_url)
         
         try:
-            response = self.model.predict(prompt, max_output_tokens=2048, temperature=0.1)
+            response = self.model.generate_content(prompt)
             
-            # Parse the JSON response
+            # Clean up response text for JSON parsing
+            text = response.text.strip()
+            if text.startswith('```'):
+                text = text.strip('`')
+                # Remove optional 'json' after backticks
+                if text.startswith('json'):
+                    text = text[4:].strip()
             try:
-                result = json.loads(response.text)
+                result = json.loads(text)
                 return result.get("suppliers", [])
             except json.JSONDecodeError:
                 print(f"Failed to parse JSON response: {response.text}")

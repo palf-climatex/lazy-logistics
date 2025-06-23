@@ -23,11 +23,10 @@ class GoogleSearchService:
             query = f'"{company_name}" suppliers vendors partners supply chain'
             
             # Execute search
-            result = service.list(
+            result = service.cse().list(
                 q=query,
                 cx=self.search_engine_id,
-                num=min(max_results, 10),  # Google CSE max is 10 per request
-                searchType="web"
+                num=min(max_results, 10)  # Google CSE max is 10 per request
             ).execute()
             
             # Extract search results

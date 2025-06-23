@@ -1,5 +1,5 @@
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Dict, Any, Optional, List
 from google.cloud import firestore
 
@@ -23,7 +23,7 @@ class FirestoreService:
             "total_suppliers": len(suppliers),
             "processing_time": processing_time,
             "search_results_count": len(search_results),
-            "timestamp": datetime.utcnow(),
+            "timestamp": datetime.now(timezone.utc),
             "search_results": search_results
         }
         
@@ -41,7 +41,7 @@ class FirestoreService:
             cache_time = cache_data.get("timestamp")
             
             # Check if cache is still valid (24 hours)
-            if cache_time and (datetime.utcnow() - cache_time).days < 1:
+            if cache_time and (datetime.now(timezone.utc) - cache_time).days < 1:
                 return cache_data
         
         return None
@@ -55,7 +55,7 @@ class FirestoreService:
             "suppliers": suppliers,
             "total_suppliers": len(suppliers),
             "processing_time": processing_time,
-            "timestamp": datetime.utcnow()
+            "timestamp": datetime.now(timezone.utc)
         }
         
         self.cache_collection.document(company_name.lower()).set(cache_data)
@@ -80,5 +80,5 @@ class FirestoreService:
         return {
             "total_extractions": total_extractions,
             "total_cached_companies": total_cached,
-            "timestamp": datetime.utcnow()
+            "timestamp": datetime.now(timezone.utc)
         } 
