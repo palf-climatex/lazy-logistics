@@ -3,7 +3,16 @@ import useSWR from 'swr';
 
 const fetcher = async (url, options) => {
   try {
-    const response = await fetch(url, options);
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+
+    const response = await fetch(url, {
+      ...options,
+      signal: controller.signal
+    });
+
+    clearTimeout(timeoutId);
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -12,6 +21,9 @@ const fetcher = async (url, options) => {
     return data;
   } catch (error) {
     console.error('Fetch error:', error);
+    if (error.name === 'AbortError') {
+      throw new Error('Request timed out after 30 seconds');
+    }
     throw error;
   }
 };
@@ -19,17 +31,18 @@ const fetcher = async (url, options) => {
 function App() {
   const [companyName, setCompanyName] = useState('');
   const [shouldFetch, setShouldFetch] = useState(false);
+  const [apiTestSuccess, setApiTestSuccess] = useState(false);
 
   const { data, error, isLoading } = useSWR(
-    shouldFetch ? ['http://localhost:8000/extract-suppliers', {
+    shouldFetch ? `extract-suppliers-${companyName}` : null,
+    () => fetcher('http://localhost:8000/extract-suppliers', {
       method: 'POST',
-      headers: { 
+      headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
       body: JSON.stringify({ company_name: companyName })
-    }] : null,
-    fetcher,
+    }),
     {
       revalidateOnFocus: false,
       revalidateOnReconnect: false,
@@ -48,25 +61,33 @@ function App() {
   const handleReset = () => {
     setCompanyName('');
     setShouldFetch(false);
+    setApiTestSuccess(false);
   };
 
   const testDirectAPI = async () => {
     try {
       console.log('Testing direct API call with "tesco"');
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 30000); // 30 second timeout
+
       const response = await fetch('http://localhost:8000/extract-suppliers', {
         method: 'POST',
-        headers: { 
+        headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json'
         },
-        body: JSON.stringify({ company_name: 'tesco' })
+        body: JSON.stringify({ company_name: 'tesco' }),
+        signal: controller.signal
       });
+
+      clearTimeout(timeoutId);
+
       const data = await response.json();
       console.log('Direct API response:', data);
-      alert(`Direct API test successful! Found ${data.total_suppliers} suppliers.`);
+      setApiTestSuccess(true);
     } catch (error) {
       console.error('Direct API test failed:', error);
-      alert(`Direct API test failed: ${error.message}`);
+      setApiTestSuccess(false);
     }
   };
 
@@ -87,7 +108,41 @@ function App() {
           </h1>
           <p className="text-gray-600 text-lg">Extract supplier information with ease</p>
         </div>
-        
+
+        {/* API Test Button */}
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 backdrop-blur-sm rounded-2xl shadow-xl border border-blue-200/30 p-6 mb-6">
+          <div className="text-center">
+            <div className="flex items-center justify-center space-x-3 mb-4">
+              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold text-gray-800">API Connection</h3>
+                <p className="text-sm text-gray-600">Test the backend API connection</p>
+              </div>
+            </div>
+            <div className="flex items-center justify-center space-x-4">
+              <button
+                type="button"
+                onClick={testDirectAPI}
+                className="px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-xl hover:bg-gray-50 hover:border-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-500/20 transition-all duration-200 font-semibold"
+              >
+                🧪 Test Connection
+              </button>
+              {apiTestSuccess && (
+                <div className="flex items-center space-x-2 bg-green-100 text-green-700 px-4 py-2 rounded-full">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span className="text-sm font-medium">Connected</span>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+
         {/* Form Card */}
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 p-8 mb-8">
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -138,15 +193,6 @@ function App() {
                 Reset
               </button>
             </div>
-            <div className="pt-4 border-t border-gray-200">
-              <button
-                type="button"
-                onClick={testDirectAPI}
-                className="w-full px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-500/20 transition-all duration-200 text-sm"
-              >
-                🧪 Test API Connection (Tesco)
-              </button>
-            </div>
           </form>
         </div>
 
@@ -185,7 +231,7 @@ function App() {
                 )}
               </div>
             </div>
-            
+
             {data.suppliers && Array.isArray(data.suppliers) && data.suppliers.length > 0 ? (
               <div className="grid gap-4">
                 {data.suppliers.map((supplier, index) => (
@@ -222,9 +268,9 @@ function App() {
                               <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                               </svg>
-                              <a 
-                                href={supplier.source_url} 
-                                target="_blank" 
+                              <a
+                                href={supplier.source_url}
+                                target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-sm text-blue-600 hover:text-blue-800 underline truncate"
                               >
@@ -256,4 +302,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
