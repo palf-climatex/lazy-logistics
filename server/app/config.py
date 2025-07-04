@@ -3,7 +3,7 @@ from typing import List, Set
 from pathlib import Path
 
 # Constants
-MAX_SEARCH_RESULTS = 30
+MAX_SEARCH_RESULTS = 20
 
 class Config:
     """Configuration management for the supplier extraction service."""

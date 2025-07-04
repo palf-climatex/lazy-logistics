@@ -5,7 +5,6 @@ Usage: python search_cli.py "Company Name" [max_results]
 """
 
 import sys
-import os
 import json
 from dotenv import load_dotenv
 from app.services.search import GoogleSearchService
@@ -24,7 +23,7 @@ def main():
         sys.exit(1)
     
     company_name = sys.argv[1]
-    max_results = int(sys.argv[2]) if len(sys.argv) > 2 else 10
+    max_results = int(sys.argv[2]) if len(sys.argv) > 2 else 20
     
     print(f"Searching for suppliers of: {company_name}")
     print(f"Maximum results: {max_results}")

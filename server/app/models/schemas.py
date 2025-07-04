@@ -4,7 +4,7 @@ from datetime import datetime, UTC
 
 class SupplierExtractionRequest(BaseModel):
     company_name: str = Field(..., description="Name of the company to extract suppliers for")
-    max_results: int = Field(default=10, description="Maximum number of search results to process")
+    max_results: int = Field(default=20, description="Maximum number of search results to process")
     
     @field_validator('company_name')
     @classmethod

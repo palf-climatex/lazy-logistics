@@ -14,13 +14,13 @@ class GoogleSearchService:
             raise ValueError("CUSTOM_SEARCH_API_KEY and CUSTOM_SEARCH_ENGINE_ID must be set")
     
     def search_company_suppliers(self, company_name: str, max_results: int = MAX_SEARCH_RESULTS) -> List[Dict[str, Any]]:
-        """Search for web documents mentioning the company and potential suppliers. Fetch up to MAX_SEARCH_RESULTS results."""
+        """Search for web documents mentioning the company and potential suppliers. Fetch up to max_results results."""
         try:
             service = build("customsearch", "v1", developerKey=self.api_key)
             query = f'"{company_name}" suppliers vendors partners supply chain'
             search_results = []
             results_per_page = 10
-            total_to_fetch = min(max_results, MAX_SEARCH_RESULTS)
+            total_to_fetch = max_results
             for start in range(1, total_to_fetch + 1, results_per_page):
                 result = service.cse().list(
                     q=query,

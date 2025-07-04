@@ -32,7 +32,7 @@ def test_health_check():
     print(f"Response: {response.json()}")
     print()
 
-def test_supplier_extraction(company_name: str, max_results: int = 5):
+def test_supplier_extraction(company_name: str, max_results: int = 20):
     """Test supplier extraction for a company."""
     print(f"Testing supplier extraction for: {company_name}")
     
@@ -152,7 +152,7 @@ def main():
     companies = ["Tesco", "Walmart", "Apple", "Nike"]
     
     for company in companies:
-        test_supplier_extraction(company, max_results=3)
+        test_supplier_extraction(company, max_results=20)
         time.sleep(1)  # Rate limiting
     
     # Test extraction history
@@ -170,7 +170,7 @@ if __name__ == "__main__":
     main()
 
 company_name = "Tesco"
-max_results = 5
+max_results = 20
 
 print(f"[DEBUG] Running pipeline for: {company_name}")
 

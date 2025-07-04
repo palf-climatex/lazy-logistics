@@ -47,7 +47,7 @@ class TestAPIEndpoints:
         
         response = client.post("/extract-suppliers", json={
             "company_name": "Tesco",
-            "max_results": 5
+            "max_results": 20
         })
         
         assert response.status_code == 200
@@ -73,7 +73,7 @@ class TestAPIEndpoints:
         
         response = client.post("/extract-suppliers", json={
             "company_name": "Tesco",
-            "max_results": 5
+            "max_results": 20
         })
         
         assert response.status_code == 200
@@ -97,7 +97,7 @@ class TestAPIEndpoints:
         
         response = client.post("/extract-suppliers", json={
             "company_name": "UnknownCompany",
-            "max_results": 5
+            "max_results": 20
         })
         
         assert response.status_code == 200
@@ -109,8 +109,8 @@ class TestAPIEndpoints:
     def test_extract_suppliers_invalid_request(self):
         """Test supplier extraction with invalid request."""
         response = client.post("/extract-suppliers", json={
-            "company_name": "",  # Invalid empty name
-            "max_results": 5
+            "company_name": "",
+            "max_results": 20
         })
         
         assert response.status_code == 422  # Validation error
@@ -171,7 +171,7 @@ class TestAPIEndpoints:
             
             response = client.post("/extract-suppliers", json={
                 "company_name": "Tesco",
-                "max_results": 5
+                "max_results": 20
             })
             
             assert response.status_code == 500
