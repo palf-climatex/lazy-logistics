@@ -1,0 +1,217 @@
+{
+  "company_name": "Sainsbury's",
+  "max_results": 30,
+  "total_suppliers": 35,
+  "suppliers": [
+    {
+      "name": "Manufacture 2030",
+      "confidence": 0.95,
+      "source_url": "https://manufacture2030.com/insights/news/2023/12/uk-grocery-retailers-partner-with-manufacture-2030",
+      "context": "Partners with Sainsbury's and other UK grocery retailers to accelerate grocery supply chain carbon reduction."
+    },
+    {
+      "name": "Tesco",
+      "confidence": 0.8,
+      "source_url": "https://manufacture2030.com/insights/news/2023/12/uk-grocery-retailers-partner-with-manufacture-2030",
+      "context": "Mentioned alongside Sainsbury's as a partner in the initiative, implying a similar operational context even if not a direct supplier to Sainsbury's.; Mentioned alongside Sainsbury's and Aldi as a company to which a supplier is allegedly 'Held to Ransom'."
+    },
+    {
+      "name": "Wesupply",
+      "confidence": 0.95,
+      "source_url": "https://www.truecommerce.com/uk-en/press-release/sainsburys-selects-wesupply-to-provide-b2b-service-for-4000-suppliers/",
+      "context": "Selected by Sainsbury's to provide a B2B service."
+    },
+    {
+      "name": "Direct Suppliers",
+      "confidence": 0.9,
+      "source_url": "https://www.about.sainsburys.co.uk/~/media/Files/S/Sainsburys/CRS%20Policies%20and%20Reports/2024/Modern%20Slavery%20Report%2023-24.pdf",
+      "context": "Direct suppliers must communicate Sainsbury's policies to their own supply chain partners."
+    },
+    {
+      "name": "Supply Chain Partners",
+      "confidence": 0.7,
+      "source_url": "https://www.about.sainsburys.co.uk/~/media/Files/S/Sainsburys/CRS%20Policies%20and%20Reports/2024/Modern%20Slavery%20Report%2023-24.pdf",
+      "context": "Sainsbury's policies and positions are communicated to the direct suppliers' own supply chain partners."
+    },
+    {
+      "name": "Unspecified Suppliers",
+      "confidence": 0.7,
+      "source_url": "https://responsiblerecruitmenttoolkit.org/press-release-growing-group-of-leading-companies-extends-the-exceptional-package-of-support-available-to-their-supply-chains-to-drive-the-responsible-recruitment-of-workers/",
+      "context": "The press release mentions Sainsbury's working in partnership with its suppliers to identify and mitigate risks in supply chains."
+    },
+    {
+      "name": "Sainsbury's Suppliers",
+      "confidence": 0.95,
+      "source_url": "https://www.linkedin.com/posts/thegrocer_supplier-resistance-delays-launch-of-sainsbury-activity-7199833800942460928-cXhK",
+      "context": "General reference to suppliers of Sainsbury's pushing back against new data fees."
+    },
+    {
+      "name": "Vendor Partners",
+      "confidence": 0.7,
+      "source_url": "https://www.linkedin.com/posts/thegrocer_supplier-resistance-delays-launch-of-sainsbury-activity-7199833800942460928-cXhK",
+      "context": "Reference to vendor partners of retailers, including Sainsbury's."
+    },
+    {
+      "name": "Italian ready meal supplier",
+      "confidence": 0.95,
+      "source_url": "https://www.greencore.com/sainsburys-press-release-thats-amore-sainsburys-partners-with-italian-ready-meal-supplier-to-donate-one-million-meals-to-those-experiencing-food-insecurity/",
+      "context": "Sainsbury's partners with an Italian ready meal supplier to donate one million meals. The company is not explicitly named in the provided text."
+    },
+    {
+      "name": "Brooklyn",
+      "confidence": 0.8,
+      "source_url": "https://www.linkedin.com/posts/cio-south-africa_merchants-appoints-shalendra-kundalram-as-activity-7227257734927118336-0inQ",
+      "context": "Mentioned in the context of Sainsbury's optimizing supplier management through Brooklyn."
+    },
+    {
+      "name": "Topo",
+      "confidence": 0.8,
+      "source_url": "https://www.linkedin.com/posts/cio-south-africa_merchants-appoints-shalendra-kundalram-as-activity-7227257734927118336-0inQ",
+      "context": "Provides solutions for vendor management and enhanced supply chain visibility for Sainsbury's."
+    },
+    {
+      "name": "Land App",
+      "confidence": 0.95,
+      "source_url": "https://thelandapp.com/2023/03/01/sustainable_supply_chain_sainsburys/",
+      "context": "Formed a partnership with Sainsbury's to lead the transition to sustainable food production."
+    },
+    {
+      "name": "UKCEH",
+      "confidence": 0.95,
+      "source_url": "https://thelandapp.com/2023/03/01/sustainable_supply_chain_sainsburys/",
+      "context": "Formed a partnership with Sainsbury's and Land App to lead the transition to sustainable food production."
+    },
+    {
+      "name": "GXO",
+      "confidence": 0.95,
+      "source_url": "https://gxo.com/news_article/gxo-expands-partnership-with-sainsburys/",
+      "context": "GXO is expanding its partnership with Sainsbury's to consolidate Food warehousing from three different logistics partners."
+    },
+    {
+      "name": "Three different logistics partners",
+      "confidence": 0.7,
+      "source_url": "https://gxo.com/news_article/gxo-expands-partnership-with-sainsburys/",
+      "context": "Sainsbury's will consolidate its Food warehousing from three different logistics partners to GXO."
+    },
+    {
+      "name": "Aldi",
+      "confidence": 0.9,
+      "source_url": "https://www.facebook.com/photo.php?fbid=996540652464965&id=100063271175272&set=a.417946296991073",
+      "context": "Mentioned alongside Sainsbury's and Tesco as a company to which a supplier is allegedly 'Held to Ransom'."
+    },
+    {
+      "name": "Fairtrade",
+      "confidence": 0.9,
+      "source_url": "https://www.idhsustainabletrade.com/publication/sainsburys-proactive-steps-to-support-living-wages-for-banana-workers/",
+      "context": "Partnering with Sainsbury's to strengthen social dialogue and enable living wages in the banana supply chain.; Partner in ethical sourcing and referenced in relation to Sainsbury's sourcing terms and a carbon-focused project."
+    },
+    {
+      "name": "Supply Chain (Unspecified)",
+      "confidence": 0.6,
+      "source_url": "https://www.thegrocer.co.uk/news/sainsburys-to-work-closely-with-suppliers-to-protect-value-for-shoppers/699646.article",
+      "context": "Productivity gains in its supply chain meaning its depots..."
+    },
+    {
+      "name": "Coffee Supplier",
+      "confidence": 0.7,
+      "source_url": "https://procurementmag.com/sustainable-sourcing/sainsburys-ensures-ethical-sourcing-fairtrade",
+      "context": "Working with Sainsbury's on a carbon-focused project."
+    },
+    {
+      "name": "Suppliers",
+      "confidence": 0.9,
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S1044500502000677",
+      "context": "Mentioned as providing support to Sainsbury's supply chain management practices.; Sainsbury's commitment to suspend suppliers due to deforestation and conversion-free beef supply chains."
+    },
+    {
+      "name": "Key Logistics Supplier",
+      "confidence": 0.95,
+      "source_url": "https://www.cityam.com/cyber-attacks-tesco-and-sainsburys-supplier-hit-in-latest-retail-assault/",
+      "context": "Provides logistics services to Sainsbury's and other major UK supermarkets"
+    },
+    {
+      "name": "Peter Green Chilled",
+      "confidence": 0.95,
+      "source_url": "https://supplychaindigital.com/technology/cyber-attack-hits-uk-supermarket-supplier",
+      "context": "Transports chilled food to supermarkets including Sainsbury's."
+    },
+    {
+      "name": "Oxfam",
+      "confidence": 0.9,
+      "source_url": "https://www.hermes-investment.com/sg/en/professional/eos-insight/stewardship/sainsburys-case-study/",
+      "context": "Oxfam published research on supply chain human and labour rights risks that UK food retailers, including Sainsbury's, were exposed to."
+    },
+    {
+      "name": "Samsung Electronics",
+      "confidence": 0.7,
+      "source_url": "https://www.innovationforum.co.uk/conferences/ethical-trade-and-human-rights-forum",
+      "context": "Mentioned in the context of global supply chain partnerships, suggesting a potential supplier relationship with Sainsbury's."
+    },
+    {
+      "name": "ecosio",
+      "confidence": 0.9,
+      "source_url": "https://ecosio.com/en/blog/an-introduction-to-doing-edi-with-sainsburys/",
+      "context": "Article hosted on ecosio.com, implying ecosio provides EDI services to Sainsbury's suppliers."
+    },
+    {
+      "name": "EDI Supplier",
+      "confidence": 0.7,
+      "source_url": "https://ecosio.com/en/blog/an-introduction-to-doing-edi-with-sainsburys/",
+      "context": "Sainsbury's EDI team works with the supplier's EDI provider to establish EDI connections. This is a generic reference to a supplier's chosen EDI provider."
+    },
+    {
+      "name": "Manhattan Associates",
+      "confidence": 0.95,
+      "source_url": "https://www.scjunction.com/manhattan-associates-success-stories/sainsburys-makes-great-strides-in-supply-chain-optimisation",
+      "context": "Provider of Extended Enterprise Management software, improving supplier collaboration for Sainsbury's."
+    },
+    {
+      "name": "Graphic Packaging",
+      "confidence": 0.95,
+      "source_url": "https://www.graphicpkg.com/news-events/graphic-packaging-and-moy-park-help-sainsburys-deliver-on-its-plan-for-better-sustainability-goals/",
+      "context": "Partners with Moy Park to deliver plastic reduction for Sainsbury's."
+    },
+    {
+      "name": "Moy Park",
+      "confidence": 0.95,
+      "source_url": "https://www.graphicpkg.com/news-events/graphic-packaging-and-moy-park-help-sainsburys-deliver-on-its-plan-for-better-sustainability-goals/",
+      "context": "Partners with Graphic Packaging to deliver plastic reduction for Sainsbury's."
+    },
+    {
+      "name": "Food Donation Partners",
+      "confidence": 0.7,
+      "source_url": "https://about.sainsburys.co.uk/~/media/Files/S/Sainsburys/CRS%20Policies%20and%20Reports/Plan%20For%20Better%20Report%202022-23.pdf",
+      "context": "Sainsbury's own-label food is donated to chosen food donation partners."
+    },
+    {
+      "name": "CHEP",
+      "confidence": 0.95,
+      "source_url": "https://www.chep.com/uk/en/sainsburys-and-chep-partnership-reduces-empty-kilometres-and-carbon-emissions",
+      "context": "Supply chain solutions company partnering with Sainsbury's Distribution Centre in Daventry.; Supply chain specialist partnering with Sainsbury's to eliminate unnecessary pallet movements."
+    },
+    {
+      "name": "Origina",
+      "confidence": 0.7,
+      "source_url": "https://www.origina.com/blog/how-sainsburys-revitalized-their-chain-of-it-suppliers",
+      "context": "The source of the article which discusses Sainsbury's chain of IT suppliers, suggesting Origina might be involved in providing IT related services to Sainsbury's."
+    },
+    {
+      "name": "Microsoft",
+      "confidence": 0.95,
+      "source_url": "https://www.microsoft.com/en-us/industry/blog/retail/2024/07/09/supply-chain-ai-for-the-new-era-of-value-realization/",
+      "context": "Partnership with Sainsbury's resulting in significant savings; likely providing AI or technology solutions."
+    },
+    {
+      "name": "Unilever",
+      "confidence": 0.95,
+      "source_url": "https://www.edie.net/sainsburys-and-unilever-sign-up-to-blockchain-trials-for-supply-chain-practices/",
+      "context": "Partnered with Sainsbury's to trial blockchain technology for sustainable farming practices, suggesting a supply chain relationship."
+    },
+    {
+      "name": "Blue Yonder",
+      "confidence": 0.95,
+      "source_url": "https://chainstoreage.com/sainsburys-smartens-and-streamlines-supply-chain-strategy",
+      "context": "Developers from Blue Yonder are partnering with Sainsbury's to create an autonomous, self-learning supply chain."
+    }
+  ]
+}

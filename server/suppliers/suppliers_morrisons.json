@@ -1,0 +1,139 @@
+{
+  "company_name": "Morrisons",
+  "max_results": 30,
+  "total_suppliers": 22,
+  "suppliers": [
+    {
+      "name": "Manufacture 2030",
+      "confidence": 0.9,
+      "source_url": "https://manufacture2030.com/insights/news/2023/12/uk-grocery-retailers-partner-with-manufacture-2030",
+      "context": "Morrisons is partnering with Manufacture 2030 to accelerate grocery supply chain carbon reduction."
+    },
+    {
+      "name": "Ocado Retail",
+      "confidence": 0.6,
+      "source_url": "https://manufacture2030.com/insights/news/2023/12/uk-grocery-retailers-partner-with-manufacture-2030",
+      "context": "Mentioned in a list of major UK grocery retailers, suggesting a peer relationship rather than a direct supplier relationship, but potentially a partner in the Manufacture 2030 initiative."
+    },
+    {
+      "name": "Blue Yonder",
+      "confidence": 0.92,
+      "source_url": "https://therecord.media/starbucks-bic-morrisons-blue-yonder-supply-chain-attack-ransomware",
+      "context": "Provider impacted by ransomware, affecting Morrisons' supply chain recovery; Supplier of warehouse management systems to Morrisons.; The source title mentions 'Ransomware Meets Retail: Blue Yonder Attack', suggesting a cyberattack impacting multiple retailers (including Morrisons) through Blue Yonder, implying Blue Yonder is part of their supply chain.; Disrupted supply chains for Morrisons due to a ransomware attack.; Technology provider to Morrisons, suffered a cyberattack disrupting Morrisons' supply chain.; Supply chain software supplier to Morrisons, affected by a ransomware attack."
+    },
+    {
+      "name": "Morrisons's suppliers",
+      "confidence": 0.95,
+      "source_url": "https://morrisonglobal.com/sustainability/supplier-code-of-conduct/",
+      "context": "General reference to companies that supply Morrisons as part of their supply chain management."
+    },
+    {
+      "name": "Suppliers",
+      "confidence": 0.7,
+      "source_url": "https://responsiblerecruitmenttoolkit.org/press-release-growing-group-of-leading-companies-extends-the-exceptional-package-of-support-available-to-their-supply-chains-to-drive-the-responsible-recruitment-of-workers/",
+      "context": "Morrisons works in partnership with its suppliers to identify and mitigate risks in supply chains.; Mentioned in the context of building partnerships for the benefit of customers, suppliers, and colleagues."
+    },
+    {
+      "name": "Graphic Packaging",
+      "confidence": 0.95,
+      "source_url": "https://www.graphicpkg.com/news-events/graphic-packaging-partners-with-morrisons-to-redefine-sustainable-meat-packaging-thanks-to-next-generation-tray-technology/",
+      "context": "Partners with Morrisons to redefine sustainable meat packaging"
+    },
+    {
+      "name": "Falfish",
+      "confidence": 0.95,
+      "source_url": "https://www.seafoodsource.com/news/business-finance/british-retailer-morrisons-buys-falfish-its-seafood-supplier-partner-of-16-years",
+      "context": "Long-time seafood supplier partner of Morrisons, providing 80 percent of Morrisons' fish."
+    },
+    {
+      "name": "Arla UK 360",
+      "confidence": 0.9,
+      "source_url": "https://news.arlafoods.co.uk/news/morrisons-opens-up-beef-supply-chain-to-help-farmers-transitioning-to-arla-uk-360-standard",
+      "context": "Dairy suppliers participating in the Arla UK 360 programme provide bull calves to Morrisons for its beef supply chain."
+    },
+    {
+      "name": "TrueCommerce",
+      "confidence": 0.9,
+      "source_url": "https://www.truecommerce.com/uk-en/solutions/trading-partner-edi-solutions/morrisons-edi/",
+      "context": "Provides EDI service solutions for Morrisons suppliers."
+    },
+    {
+      "name": "OpenText",
+      "confidence": 0.95,
+      "source_url": "https://ecosio.com/en/blog/morrisons-edi-get-yourself-connected/",
+      "context": "Morrisons' EDI provider"
+    },
+    {
+      "name": "Del Monte Kenya",
+      "confidence": 0.95,
+      "source_url": "https://www.thebureauinvestigates.com/stories/2024-06-27/morrisons-drop-pineapple-supplier-over-violence-at-del-monte-farm",
+      "context": "Supplier of pineapple products to Morrisons; being dropped due to human rights concerns."
+    },
+    {
+      "name": "Atheon Analytics",
+      "confidence": 0.95,
+      "source_url": "https://itsupplychain.com/atheon-analytics-to-supply-skutrak-platform-to-morrisons-so-it-can-provide-operational-data-to-suppliers/",
+      "context": "Supplies the SKUtrak platform to Morrisons."
+    },
+    {
+      "name": "Valpak Data Management",
+      "confidence": 0.9,
+      "source_url": "https://www.morrisons-corporate.com/suppliers/supplier-information/",
+      "context": "Data partner working with Morrisons"
+    },
+    {
+      "name": "Global Pacific",
+      "confidence": 0.9,
+      "source_url": "https://www.retail-week.com/supply-chain/analysis-why-food-retailer-morrisons-opted-for-vertical-integration/5045407.article",
+      "context": "Mentioned as a supplier within Morrisons' vertically integrated supply chain.; Supplier mentioned in relation to Morrisons' vertically integrated supply chain."
+    },
+    {
+      "name": "Lansen Nursery",
+      "confidence": 0.95,
+      "source_url": "https://www.morrisons-corporate.com/about-us/company-history/",
+      "context": "A leading grower and supplier of outdoor plants that was added to Morrisons manufacturing portfolio."
+    },
+    {
+      "name": "Joseph Robertson",
+      "confidence": 0.95,
+      "source_url": "https://sustainablefish.org/press-release/meijer-joins-ocean-disclosure-project/",
+      "context": "UK seafood supplier mentioned alongside Morrisons."
+    },
+    {
+      "name": "Food Producers",
+      "confidence": 0.7,
+      "source_url": "https://www.morrisons-corporate.com/media-centre/corporate-news/morrisons-becomes-the-first-uk-retailer-to-take-action-with-the-move-to--15c-coalition-and-commits-to-raise-freezer-temperatures-in-drive-to-net-zero/",
+      "context": "Mentioned in the context of supplying Morrisons' supply chain."
+    },
+    {
+      "name": "Logistics",
+      "confidence": 0.6,
+      "source_url": "https://www.morrisons-corporate.com/media-centre/corporate-news/morrisons-becomes-the-first-uk-retailer-to-take-action-with-the-move-to--15c-coalition-and-commits-to-raise-freezer-temperatures-in-drive-to-net-zero/",
+      "context": "Mentioned in the context of supplying Morrisons' supply chain, possibly logistics companies."
+    },
+    {
+      "name": "The Co-operative Food",
+      "confidence": 0.75,
+      "source_url": "https://oceandisclosureproject.org/about-us",
+      "context": "Mentioned alongside Morrisons as participating in the Ocean Disclosure Project, suggesting a potential supply chain relationship or similar business context."
+    },
+    {
+      "name": "Aquaculture feed producers",
+      "confidence": 0.65,
+      "source_url": "https://oceandisclosureproject.org/about-us",
+      "context": "Mentioned in the context of the Ocean Disclosure Project, indicating that aquaculture feed producers are suppliers in the supply chain relevant to Morrisons (and others)."
+    },
+    {
+      "name": "Sainsbury's",
+      "confidence": 0.7,
+      "source_url": "https://idh.org/news/uk-retailers-commit-to-close-living-wage-gaps-in-international-banana-supply-chains",
+      "context": "Listed alongside Morrisons as a retailer committing to close living wage gaps in banana supply chains, suggesting potential shared suppliers."
+    },
+    {
+      "name": "Tesco",
+      "confidence": 0.7,
+      "source_url": "https://idh.org/news/uk-retailers-commit-to-close-living-wage-gaps-in-international-banana-supply-chains",
+      "context": "Listed alongside Morrisons as a retailer committing to close living wage gaps in banana supply chains, suggesting potential shared suppliers."
+    }
+  ]
+}

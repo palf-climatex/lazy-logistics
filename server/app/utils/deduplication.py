@@ -1,20 +1,32 @@
 from typing import List, Dict, Any
 from fuzzywuzzy import fuzz
 import re
+from app.config import config
 
 class SupplierDeduplicator:
     def __init__(self, similarity_threshold: float = 80.0):
         self.similarity_threshold = similarity_threshold
     
     def deduplicate_suppliers(self, suppliers: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """Deduplicate suppliers using fuzzy string matching."""
+        """Deduplicate suppliers using fuzzy string matching and ignore list filtering."""
         
         if not suppliers:
             return []
         
+        # Filter out ignored suppliers first
+        filtered_suppliers = []
+        for supplier in suppliers:
+            if not config.is_supplier_ignored(supplier["name"]):
+                filtered_suppliers.append(supplier)
+            else:
+                print(f"[DEBUG] Ignoring supplier: {supplier['name']}")
+        
+        if not filtered_suppliers:
+            return []
+        
         # Normalize supplier names
         normalized_suppliers = []
-        for supplier in suppliers:
+        for supplier in filtered_suppliers:
             normalized_name = self._normalize_company_name(supplier["name"])
             normalized_suppliers.append({
                 **supplier,

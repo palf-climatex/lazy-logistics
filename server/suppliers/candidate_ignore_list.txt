@@ -1,0 +1,10 @@
+# Candidate ignore list generated from supermarket supplier analysis
+# Review and manually edit before adding to supplier_ignore_list.txt
+
+Co-op
+Manufacture 2030
+Manufacturers
+SPS Commerce
+Suppliers
+Tesco
+TrueCommerce

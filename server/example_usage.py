@@ -105,6 +105,41 @@ def test_statistics():
     
     print("-" * 50)
 
+def test_ignore_list_management():
+    """Test ignore list management endpoints."""
+    print("Testing ignore list management...")
+    
+    # Get current ignore list
+    response = requests.get(f"{API_BASE_URL}/ignore-list")
+    print(f"Get ignore list status: {response.status_code}")
+    if response.status_code == 200:
+        result = response.json()
+        print(f"Current ignore list ({result['count']} items): {result['ignore_list']}")
+    
+    # Add a supplier to ignore list
+    add_payload = {"supplier_name": "Test Ignore Supplier"}
+    response = requests.post(f"{API_BASE_URL}/ignore-list/add", json=add_payload)
+    print(f"Add to ignore list status: {response.status_code}")
+    if response.status_code == 200:
+        result = response.json()
+        print(f"Add result: {result['message']}")
+    
+    # Get updated ignore list
+    response = requests.get(f"{API_BASE_URL}/ignore-list")
+    if response.status_code == 200:
+        result = response.json()
+        print(f"Updated ignore list ({result['count']} items): {result['ignore_list']}")
+    
+    # Remove the supplier from ignore list
+    remove_payload = {"supplier_name": "Test Ignore Supplier"}
+    response = requests.delete(f"{API_BASE_URL}/ignore-list/remove", json=remove_payload)
+    print(f"Remove from ignore list status: {response.status_code}")
+    if response.status_code == 200:
+        result = response.json()
+        print(f"Remove result: {result['message']}")
+    
+    print("-" * 50)
+
 def main():
     """Run all example tests."""
     print("Lazy Logistics API - Example Usage")
@@ -125,6 +160,9 @@ def main():
     
     # Test statistics
     test_statistics()
+    
+    # Test ignore list management
+    test_ignore_list_management()
     
     print("Example usage completed!")
 

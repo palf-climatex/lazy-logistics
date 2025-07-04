@@ -1,0 +1,115 @@
+{
+  "company_name": "Aldi",
+  "max_results": 30,
+  "total_suppliers": 18,
+  "suppliers": [
+    {
+      "name": "ALDI Partners",
+      "confidence": 0.7,
+      "source_url": "https://progressivegrocer.com/what-aldi-telling-its-suppliers-during-unprecedented-growth-period",
+      "context": "ALDI encouraged its partners to help rein in costs and deliver on sustainability."
+    },
+    {
+      "name": "Avantor",
+      "confidence": 0.75,
+      "source_url": "https://guidehouse.com/news/communities-energy-infrastructure/2025/three-global-brands-join-supplier-loct",
+      "context": "Mentioned alongside Aldi in joining Supplier LOCT.; Mentioned alongside ALDI and McCain Foods as joining 'Supplier Leadership on Climate Transition', suggesting a potential supplier relationship."
+    },
+    {
+      "name": "McCain Foods",
+      "confidence": 0.75,
+      "source_url": "https://guidehouse.com/news/communities-energy-infrastructure/2025/three-global-brands-join-supplier-loct",
+      "context": "Mentioned alongside Aldi in joining Supplier LOCT.; Mentioned alongside ALDI and Avantor as joining 'Supplier Leadership on Climate Transition', suggesting a potential supplier relationship."
+    },
+    {
+      "name": "Manufacture 2030",
+      "confidence": 0.9,
+      "source_url": "https://manufacture2030.com/insights/news/2023/12/uk-grocery-retailers-partner-with-manufacture-2030",
+      "context": "Partnering with Aldi and other UK grocery retailers to accelerate grocery supply chain carbon reduction."
+    },
+    {
+      "name": "External Logistics Partners",
+      "confidence": 0.8,
+      "source_url": "https://sustainability.aldisouthgroup.com/stories/partnering-for-progress-emissions",
+      "context": "Provides logistics services to Aldi, contributing to Scope 3 indirect emissions.; Aldi's network of logistics partners."
+    },
+    {
+      "name": "Suppliers",
+      "confidence": 0.93,
+      "source_url": "https://sustainability.aldisouthgroup.com/stories/partnering-for-progress-emissions",
+      "context": "Generic reference to companies that supply goods/materials to Aldi, contributing to Scope 3 indirect emissions.; Aldi's network of suppliers."
+    },
+    {
+      "name": "Third-Party Logistics Providers",
+      "confidence": 0.87,
+      "source_url": "https://sustainability.aldisouthgroup.com/stories/partnering-for-progress-emissions",
+      "context": "Provides services throughout the Aldi value chain, contributing to Scope 3 indirect emissions.; ALDI is partnering with these providers for logistics services.; Partnering with Aldi to identify [something not specified]"
+    },
+    {
+      "name": "Zipline Logistics",
+      "confidence": 0.9,
+      "source_url": "https://ziplinelogistics.com/blog/shipping-to-aldi/",
+      "context": "Source of information about shipping to Aldi for CPG brands."
+    },
+    {
+      "name": "Business Partners",
+      "confidence": 0.7,
+      "source_url": "https://sustainability.aldisouthgroup.com/stories/partnering-for-change-human-rights",
+      "context": "Aldi mentions that their business partners are important in respecting human rights within global supply chains.; ALDI\u00b4s expectations towards business partners concerning gender equality within supply chains."
+    },
+    {
+      "name": "ALDI supplier partners",
+      "confidence": 0.8,
+      "source_url": "https://www.grocerydive.com/news/aldi-strengthen-suppliers-partnerships-rapid-store-growth-united-states/716043/",
+      "context": "Aldi stressed during the event that its supplier partners need to...; Mentioned as attendees of the inaugural ALDI Ambition: Winning Together supplier summit.; ALDI values dealing fairly and transparently with its supplier partners."
+    },
+    {
+      "name": "C&S Wholesale Grocers, LLC",
+      "confidence": 0.9,
+      "source_url": "https://www.segrocers.com/media/details/southeastern-grocers-announces-new-ownership-of-iconic-winn-dixie-banner?DataSource=75457460-5B4B-47DD-BB5F-903BEE2DAECF",
+      "context": "Industry leader in supply chain, suggesting potential supplier relationship with Aldi."
+    },
+    {
+      "name": "Pacific Coast Food Waste Commitment",
+      "confidence": 0.9,
+      "source_url": "https://pacificcoastcollaborative.org/aldi-partners-with-pcfwc/",
+      "context": "ALDI partners with PCFWC to cut food waste, suggesting a collaborative effort or service provision related to waste reduction."
+    },
+    {
+      "name": "SPS Commerce",
+      "confidence": 0.95,
+      "source_url": "https://www.spscommerce.com/network/find-a-partner/view/aldi/",
+      "context": "Builds retail connections for suppliers to manage Aldi vendor requirements; implies SPS Commerce is a partner that helps suppliers connect with Aldi."
+    },
+    {
+      "name": "CJV Partners",
+      "confidence": 0.95,
+      "source_url": "https://www.cjvpartners.com/case-study/",
+      "context": "Provided support to Aldi for the roll out of their Ariba Solution."
+    },
+    {
+      "name": "Ariba",
+      "confidence": 0.75,
+      "source_url": "https://www.cjvpartners.com/case-study/",
+      "context": "Aldi sought support from CJV Partners for the rollout of their Ariba Solution; Ariba is likely a software or service provider."
+    },
+    {
+      "name": "Chocolate Products Suppliers",
+      "confidence": 0.95,
+      "source_url": "https://www.somo.nl/save-your-tiers-for-another-day/",
+      "context": "Suppliers of chocolate products to Aldi Nord and Aldi."
+    },
+    {
+      "name": "Supplier to Tesco, Sainsbury's and Aldi",
+      "confidence": 0.95,
+      "source_url": "https://www.facebook.com/photo.php?fbid=996540652464965&id=100063271175272&set=a.417946296991073",
+      "context": "The document refers to a supplier that provides goods or services to Tesco, Sainsbury's, and Aldi."
+    },
+    {
+      "name": "Alcohol Distributors",
+      "confidence": 0.7,
+      "source_url": "https://fintech.com/blog/news-flask-news-on-booze-5",
+      "context": "Listed under 'Vendors & Supply Chain Partners' alongside 'Accounting Firms', implying they supply alcohol to Aldi."
+    }
+  ]
+}

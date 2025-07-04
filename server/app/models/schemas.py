@@ -28,4 +28,24 @@ class SupplierExtractionResponse(BaseModel):
 
 class HealthResponse(BaseModel):
     status: str
-    timestamp: datetime = Field(default_factory=lambda: datetime.now(UTC)) 
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(UTC))
+
+# Ignore List Schemas
+
+class IgnoreListResponse(BaseModel):
+    ignore_list: List[str] = Field(..., description="List of ignored supplier names")
+    count: int = Field(..., description="Number of suppliers in ignore list")
+
+class IgnoreListActionRequest(BaseModel):
+    supplier_name: str = Field(..., description="Name of the supplier to add/remove")
+    
+    @field_validator('supplier_name')
+    @classmethod
+    def validate_supplier_name(cls, v: str) -> str:
+        if not v or not v.strip():
+            raise ValueError('Supplier name cannot be empty')
+        return v.strip()
+
+class IgnoreListActionResponse(BaseModel):
+    message: str = Field(..., description="Response message")
+    success: bool = Field(..., description="Whether the action was successful") 

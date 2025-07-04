@@ -8,12 +8,16 @@ from app.models.schemas import (
     SupplierExtractionRequest, 
     SupplierExtractionResponse, 
     Supplier,
-    HealthResponse
+    HealthResponse,
+    IgnoreListResponse,
+    IgnoreListActionRequest,
+    IgnoreListActionResponse
 )
 from app.services.search import GoogleSearchService
 from app.services.extraction import VertexAIExtractionService
 from app.services.storage import FirestoreService
 from app.utils.deduplication import SupplierDeduplicator
+from app.config import config
 
 # Load environment variables
 load_dotenv()
@@ -154,6 +158,63 @@ async def get_statistics():
         return stats
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to get statistics: {str(e)}")
+
+# Ignore List Management Endpoints
+
+@app.get("/ignore-list", response_model=IgnoreListResponse)
+async def get_ignore_list():
+    """Get the current supplier ignore list."""
+    try:
+        ignore_list = config.get_ignore_list()
+        return IgnoreListResponse(ignore_list=ignore_list, count=len(ignore_list))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to get ignore list: {str(e)}")
+
+@app.post("/ignore-list/add", response_model=IgnoreListActionResponse)
+async def add_to_ignore_list(request: IgnoreListActionRequest):
+    """Add a supplier to the ignore list."""
+    try:
+        success = config.add_to_ignore_list(request.supplier_name)
+        if success:
+            return IgnoreListActionResponse(
+                message=f"Added '{request.supplier_name}' to ignore list", 
+                success=True
+            )
+        else:
+            raise HTTPException(status_code=500, detail="Failed to add supplier to ignore list")
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to add to ignore list: {str(e)}")
+
+@app.delete("/ignore-list/remove", response_model=IgnoreListActionResponse)
+async def remove_from_ignore_list(request: IgnoreListActionRequest):
+    """Remove a supplier from the ignore list."""
+    try:
+        success = config.remove_from_ignore_list(request.supplier_name)
+        if success:
+            return IgnoreListActionResponse(
+                message=f"Removed '{request.supplier_name}' from ignore list", 
+                success=True
+            )
+        else:
+            raise HTTPException(status_code=404, detail="Supplier not found in ignore list")
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to remove from ignore list: {str(e)}")
+
+@app.post("/ignore-list/reload", response_model=IgnoreListActionResponse)
+async def reload_ignore_list():
+    """Reload the ignore list from file."""
+    try:
+        config.reload_ignore_list()
+        return IgnoreListActionResponse(
+            message="Ignore list reloaded successfully", 
+            success=True
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to reload ignore list: {str(e)}")
 
 if __name__ == "__main__":
     import uvicorn

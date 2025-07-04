@@ -3,6 +3,7 @@ import requests
 from typing import List, Dict, Any
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
+from app.config import MAX_SEARCH_RESULTS
 
 class GoogleSearchService:
     def __init__(self):
@@ -12,35 +13,31 @@ class GoogleSearchService:
         if not self.api_key or not self.search_engine_id:
             raise ValueError("CUSTOM_SEARCH_API_KEY and CUSTOM_SEARCH_ENGINE_ID must be set")
     
-    def search_company_suppliers(self, company_name: str, max_results: int = 10) -> List[Dict[str, Any]]:
-        """Search for web documents mentioning the company and potential suppliers."""
-        
+    def search_company_suppliers(self, company_name: str, max_results: int = MAX_SEARCH_RESULTS) -> List[Dict[str, Any]]:
+        """Search for web documents mentioning the company and potential suppliers. Fetch up to MAX_SEARCH_RESULTS results."""
         try:
-            # Build the service
             service = build("customsearch", "v1", developerKey=self.api_key)
-            
-            # Search query to find supplier information
             query = f'"{company_name}" suppliers vendors partners supply chain'
-            
-            # Execute search
-            result = service.cse().list(
-                q=query,
-                cx=self.search_engine_id,
-                num=min(max_results, 10)  # Google CSE max is 10 per request
-            ).execute()
-            
-            # Extract search results
             search_results = []
-            for item in result.get("items", []):
-                search_results.append({
-                    "title": item.get("title", ""),
-                    "snippet": item.get("snippet", ""),
-                    "link": item.get("link", ""),
-                    "displayLink": item.get("displayLink", "")
-                })
-            
-            return search_results
-            
+            results_per_page = 10
+            total_to_fetch = min(max_results, MAX_SEARCH_RESULTS)
+            for start in range(1, total_to_fetch + 1, results_per_page):
+                result = service.cse().list(
+                    q=query,
+                    cx=self.search_engine_id,
+                    num=results_per_page,
+                    start=start
+                ).execute()
+                for item in result.get("items", []):
+                    search_results.append({
+                        "title": item.get("title", ""),
+                        "snippet": item.get("snippet", ""),
+                        "link": item.get("link", ""),
+                        "displayLink": item.get("displayLink", "")
+                    })
+                if len(search_results) >= total_to_fetch or not result.get("items"):
+                    break
+            return search_results[:total_to_fetch]
         except HttpError as e:
             print(f"Google Search API error: {e}")
             return []

@@ -1,0 +1,163 @@
+{
+  "company_name": "Waitrose",
+  "max_results": 30,
+  "total_suppliers": 26,
+  "suppliers": [
+    {
+      "name": "Sedex",
+      "confidence": 0.9,
+      "source_url": "https://www.sedex.com/case_studies/how-waitrose-partners-is-using-sedex-to-maintain-ethical-practices-throughout-their-supply-chain/",
+      "context": "Provides a platform for Waitrose to understand more about their suppliers and conduct ethical due diligence.; The post is from Sedex CSR, suggesting a potential partnership or collaboration in ethical sourcing and responsible practices for Waitrose's supply chain."
+    },
+    {
+      "name": "Manufacture 2030",
+      "confidence": 0.95,
+      "source_url": "https://manufacture2030.com/insights/news/2023/12/uk-grocery-retailers-partner-with-manufacture-2030",
+      "context": "Strategic partner to reduce greenhouse gas emissions across Waitrose's supply chain."
+    },
+    {
+      "name": "Blue Yonder",
+      "confidence": 0.95,
+      "source_url": "https://www.businesswire.com/news/home/20240620098494/en/Waitrose-Invests-in-Blue-Yonders-Industry-Leading-Demand-Forecasting-Capability-to-Further-Improve-Customer-Satisfaction",
+      "context": "Waitrose invests in Blue Yonder's demand forecasting capability.; Supply chain solution provider extending its collaboration with Waitrose by adding forecasting capability."
+    },
+    {
+      "name": "Bamboo Rose",
+      "confidence": 0.9,
+      "source_url": "https://bamboorose.com/case-studies/case-study-waitrose-partners-supports-compliance-for-local-and-regional-suppliers/",
+      "context": "Provider of a Supplier Relationship Management platform used by Waitrose & Partners."
+    },
+    {
+      "name": "Tony's Open Chain",
+      "confidence": 0.77,
+      "source_url": "https://www.johnlewispartnership.media/news/waitrose/09042024/waitrose-announces-new-cocoa-sourcing-partnership-with-tonys-open-chain",
+      "context": "Waitrose is partnering with Tony's Open Chain for cocoa sourcing.; Mentioned in relation to Waitrose & Partners joining Tony's Open Chain, possibly indicating a partnership or supply chain initiative."
+    },
+    {
+      "name": "Local Producers",
+      "confidence": 0.7,
+      "source_url": "https://www.waitrose.com/ecom/content/about-us/regional-suppliers",
+      "context": "Mentioned as valued regional suppliers of Waitrose."
+    },
+    {
+      "name": "Suppliers",
+      "confidence": 0.8,
+      "source_url": "https://www.fairtrade.org.uk/for-business/fairtrade-case-studies/waitrose-partners-and-fairtrade-partnering-on-sourcing-and-producer-voice/",
+      "context": "Waitrose & Partners consulted with its suppliers throughout 2018 and produced process guidance documents for them.; Suppliers providing products sourced for Waitrose."
+    },
+    {
+      "name": "TrueCommerce",
+      "confidence": 0.95,
+      "source_url": "https://www.truecommerce.com/uk-en/solutions/trading-partner-edi-solutions/waitrose-edi/",
+      "context": "Provides EDI trading platform solutions for Waitrose suppliers, enabling supply chain visibility and management."
+    },
+    {
+      "name": "Forest Feast",
+      "confidence": 0.9,
+      "source_url": "https://www.linkedin.com/posts/kestrel-foods-limited_waitrose-sampling-fmcg-activity-7216590787529105411-WKTL",
+      "context": "Product sampling event at Waitrose, suggesting Forest Feast is a supplier of snack products."
+    },
+    {
+      "name": "Kestrel Foods Limited",
+      "confidence": 0.7,
+      "source_url": "https://www.linkedin.com/posts/kestrel-foods-limited_waitrose-sampling-fmcg-activity-7216590787529105411-WKTL",
+      "context": "The source is a LinkedIn post from Kestrel Foods Limited about a Forest Feast sampling at Waitrose, suggesting Kestrel Foods is the parent company/manufacturer of Forest Feast snacks supplied to Waitrose."
+    },
+    {
+      "name": "GS1 UK",
+      "confidence": 0.75,
+      "source_url": "https://www.gs1uk.org/insights/press-releases/130219-waitrose-and-partners-adopts-productdna-as-its-preferred-product-data-platform",
+      "context": "Source of the article mentioning Waitrose & Partners adopting productDNA, suggesting a business relationship."
+    },
+    {
+      "name": "productDNA",
+      "confidence": 0.9,
+      "source_url": "https://www.gs1uk.org/insights/press-releases/130219-waitrose-and-partners-adopts-productdna-as-its-preferred-product-data-platform",
+      "context": "Waitrose & Partners adopts productDNA as its preferred product data platform."
+    },
+    {
+      "name": "Supply Chain Finance Companies",
+      "confidence": 0.6,
+      "source_url": "https://procurementmag.com/sustainable-sourcing/waitrose-what-is-greenwashing-in-sourcing-why-is-it-bad",
+      "context": "Provides supply chain finance to Waitrose"
+    },
+    {
+      "name": "Logistics and Distribution Companies",
+      "confidence": 0.6,
+      "source_url": "https://procurementmag.com/sustainable-sourcing/waitrose-what-is-greenwashing-in-sourcing-why-is-it-bad",
+      "context": "Provides logistics and distribution services to Waitrose"
+    },
+    {
+      "name": "Lavazza",
+      "confidence": 0.95,
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0019850123000688",
+      "context": "Italian coffee beans manufacturer (supplier) to Waitrose (buyer)."
+    },
+    {
+      "name": "Farming Community Network",
+      "confidence": 0.7,
+      "source_url": "https://www.johnlewispartnership.co.uk/csr/always-fair.html",
+      "context": "Supports farmers, including Waitrose suppliers, who need assistance."
+    },
+    {
+      "name": "Waitrose Supplier",
+      "confidence": 0.9,
+      "source_url": "https://www.researchgate.net/publication/228285202_The_Evolution_from_Corporate_Social_Responsibility_to_Supply_Chain_Responsibility_The_Case_of_Waitrose",
+      "context": "An unnamed supplier of Waitrose that was subject to an ethical audit."
+    },
+    {
+      "name": "Highlands and Islands Enterprise",
+      "confidence": 0.9,
+      "source_url": "https://www.undercurrentnews.com/2025/06/23/waitroses-salmon-supplier-partners-on-ai-driven-processing-initiative/",
+      "context": "Provides support to Waitrose's salmon supplier partners in their AI-driven processing initiative."
+    },
+    {
+      "name": "Hagerstown",
+      "confidence": 0.6,
+      "source_url": "https://www.seafoodsource.com/news/foodservice-retail/waitrose-phasing-out-ice-slurry-slaughter-for-prawns-in-its-supply-chain",
+      "context": "Mentioned alongside Waitrose as one of the retailers in December 2024. Implies Hagerstown is a company providing goods to Waitrose."
+    },
+    {
+      "name": "GXO Logistics",
+      "confidence": 0.95,
+      "source_url": "https://gxo.com/news_article/gxo-extends-agreement-with-waitrose-and-partners/",
+      "context": "Contract logistics provider that has extended its agreement with Waitrose & Partners."
+    },
+    {
+      "name": "Worldwide Fruit",
+      "confidence": 0.95,
+      "source_url": "https://www.wrap.ngo/resources/case-study/waitrose-worldwide-fruit-whole-chain-food-waste-reduction",
+      "context": "Mentioned in the title as a partner with Waitrose in a food waste reduction initiative, implying a supplier relationship."
+    },
+    {
+      "name": "Seasonal Supply Chains",
+      "confidence": 0.6,
+      "source_url": "https://www.hull.ac.uk/research/institutes/wilberforce/working-with-the-john-lewis-partnership",
+      "context": "Identified as part of Waitrose's supply chain, indicating they provide seasonal goods or services."
+    },
+    {
+      "name": "Aquascot",
+      "confidence": 0.95,
+      "source_url": "https://www.wrap.ngo/resources/case-study/whole-chain-food-waste-reduction-plan-waitrose-partners-aquascot-kames-case",
+      "context": "Case study mentions Waitrose & Partners, Aquascot & Kames, suggesting Aquascot is involved in the whole chain food waste reduction plan, implying a supplier relationship."
+    },
+    {
+      "name": "Kames",
+      "confidence": 0.95,
+      "source_url": "https://www.wrap.ngo/resources/case-study/whole-chain-food-waste-reduction-plan-waitrose-partners-aquascot-kames-case",
+      "context": "Case study mentions Waitrose & Partners, Aquascot & Kames, suggesting Kames is involved in the whole chain food waste reduction plan, implying a supplier relationship."
+    },
+    {
+      "name": "Primafruit",
+      "confidence": 0.95,
+      "source_url": "https://www.foodlogistics.com/transportation/cold-chain/news/12042198/uks-waitrose-taps-primafruit-for-sourcing-imported-fruit",
+      "context": "Sourcing imported fruit for Waitrose."
+    },
+    {
+      "name": "Supply Chains",
+      "confidence": 0.6,
+      "source_url": "https://www.theguardian.com/sustainable-business/2015/apr/30/waitrose-helps-rebuild-the-uks-confidence-in-meat",
+      "context": "Waitrose supply chains are founded on trust, indicating relationships with suppliers."
+    }
+  ]
+}

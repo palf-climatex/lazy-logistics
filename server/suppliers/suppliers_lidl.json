@@ -1,0 +1,181 @@
+{
+  "company_name": "Lidl",
+  "max_results": 30,
+  "total_suppliers": 29,
+  "suppliers": [
+    {
+      "name": "Like-minded Suppliers",
+      "confidence": 0.9,
+      "source_url": "https://www.lidl.com/suppliers",
+      "context": "Lidl is seeking suppliers that share their commitment to quality and are interested in growing with them."
+    },
+    {
+      "name": "Kaufland Asia",
+      "confidence": 0.9,
+      "source_url": "https://lidl.asia/partner-with-us",
+      "context": "Lidl & Kaufland Asia Supplier Network suggests Kaufland Asia is a partner, possibly a supplier, of Lidl, especially in the Asian market."
+    },
+    {
+      "name": "Manufacture 2030",
+      "confidence": 0.9,
+      "source_url": "https://manufacture2030.com/insights/news/2023/12/uk-grocery-retailers-partner-with-manufacture-2030",
+      "context": "Partnering with Lidl GB (and other grocery retailers) to accelerate grocery supply chain carbon reduction."
+    },
+    {
+      "name": "Aldi",
+      "confidence": 0.6,
+      "source_url": "https://manufacture2030.com/insights/news/2023/12/uk-grocery-retailers-partner-with-manufacture-2030",
+      "context": "Mentioned alongside Lidl GB as one of the major UK grocery retailers partnering with Manufacture 2030. Potentially a competitor using the same service."
+    },
+    {
+      "name": "ASDA",
+      "confidence": 0.6,
+      "source_url": "https://manufacture2030.com/insights/news/2023/12/uk-grocery-retailers-partner-with-manufacture-2030",
+      "context": "Mentioned alongside Lidl GB as one of the major UK grocery retailers partnering with Manufacture 2030. Potentially a competitor using the same service."
+    },
+    {
+      "name": "Co-op",
+      "confidence": 0.6,
+      "source_url": "https://manufacture2030.com/insights/news/2023/12/uk-grocery-retailers-partner-with-manufacture-2030",
+      "context": "Mentioned alongside Lidl GB as one of the major UK grocery retailers partnering with Manufacture 2030. Potentially a competitor using the same service."
+    },
+    {
+      "name": "SPS Commerce",
+      "confidence": 0.95,
+      "source_url": "https://www.spscommerce.com/eur/network/find-a-partner/view/lidl/",
+      "context": "Handles Lidl EDI compliance for suppliers; manages Lidl vendor requirements."
+    },
+    {
+      "name": "WWF",
+      "confidence": 0.93,
+      "source_url": "https://procurementmag.com/sustainability/how-wwf-will-work-on-sustainability-in-lidls-value-chain",
+      "context": "Partnering with Lidl to work on sustainability in Lidl's value chain.; Strategic partnership with Lidl to improve conservation and biodiversity across 31 countries.; Partnership with Lidl goes global.; Partner in a global initiative; Lidl partners with WWF.; WWF is partnering with Lidl on a five-year international sustainable supply chain programme."
+    },
+    {
+      "name": "Salesforce.com Inc.",
+      "confidence": 0.6,
+      "source_url": "https://files.sciencebasedtargets.org/production/files/Supplier-Engagement-Guidance.pdf?dm=1734357659",
+      "context": "Mentioned alongside Lidl Belgium in the context of engaging supply chains on decarbonization, suggesting a business relationship or service provision."
+    },
+    {
+      "name": "Independent food, fruit and vegetable suppliers",
+      "confidence": 0.95,
+      "source_url": "https://info.lidl/en/responsibility/transparency-in-our-supply-chains",
+      "context": "Supplies food, fruit, and vegetables to Lidl."
+    },
+    {
+      "name": "Schwarz Group",
+      "confidence": 0.9,
+      "source_url": "https://it.schwarz/en/asset/download/21480/file/Code%2520of%2520Conduct%2520f%25C3%25BCr%2520Gesch%25C3%25A4ftspartner_Schwarz%2520Gruppe_EN.pdf?version=1",
+      "context": "Parent company of Lidl; enforces supply chain standards."
+    },
+    {
+      "name": "IDH",
+      "confidence": 0.6,
+      "source_url": "https://www.idhsustainabletrade.com/publication/lidls-commitment-to-living-wages-in-the-banana-sector/",
+      "context": "The source is from IDH Sustainable Trade, suggesting they are involved in Lidl's sustainable trade initiatives. Lidl introduced its suppliers to the project through onboarding and training facilitated by IDH (implicit)."
+    },
+    {
+      "name": "Lidl logistics partners",
+      "confidence": 0.75,
+      "source_url": "https://www.scribd.com/document/639564860/Lidl-Asia-Supplier-Onboarding-Presentation-2022-Nov",
+      "context": "Coordinate supply with Lidl logistics partners."
+    },
+    {
+      "name": "Unnamed Suppliers",
+      "confidence": 0.7,
+      "source_url": "https://idh.org/resources/persistence-is-key-lidl-germany-and-its-banana-supply-chain",
+      "context": "Lidl tested a tool with a couple of suppliers before rolling it out more broadly."
+    },
+    {
+      "name": "Bangladesh Suppliers",
+      "confidence": 0.9,
+      "source_url": "https://www.theguardian.com/business/2023/jan/11/lidl-zara-owner-hm-next-bangladesh-suppliers",
+      "context": "The article discusses Lidl, Zara's owner, H&M and Next paying Bangladesh suppliers less."
+    },
+    {
+      "name": "ILO Better Work",
+      "confidence": 0.9,
+      "source_url": "https://www.abettertomorrow-lidl.ie/wp-content/uploads/2021/11/Human-Rights-in-the-Supply-Chain-Updated.pdf",
+      "context": "Lidl has been an ILO Better Work program partner since 2021."
+    },
+    {
+      "name": "Tier 1 Supplier Facilities",
+      "confidence": 0.7,
+      "source_url": "https://www.abettertomorrow-lidl.ie/wp-content/uploads/2021/11/Human-Rights-in-the-Supply-Chain-Updated.pdf",
+      "context": "Lidl is working to ensure that all tier 1 supplier facilities in..."
+    },
+    {
+      "name": "TrueCommerce",
+      "confidence": 0.93,
+      "source_url": "https://www.truecommerce.com/uk-en/solutions/trading-partner-edi-solutions/lidl-uk-edi/",
+      "context": "Provides EDI trading partner platform solutions to Lidl UK.; EDI partner that streamlines communications with Lidl Snc."
+    },
+    {
+      "name": "Non-food Suppliers",
+      "confidence": 0.9,
+      "source_url": "https://corporate.lidl.co.uk/sustainability/human-rights",
+      "context": "Supplies non-food items to Lidl Great Britain."
+    },
+    {
+      "name": "Qualified Local Social Audit Firms",
+      "confidence": 0.7,
+      "source_url": "https://corporate.lidl.co.uk/sustainability/human-rights",
+      "context": "Provides independent social audit services to Lidl's non-food suppliers."
+    },
+    {
+      "name": "Proctor & Associates",
+      "confidence": 0.95,
+      "source_url": "https://www.thegrocer.co.uk/analysis-and-features/its-too-late-for-me-says-deane-proctor-the-supplier-suing-lidl/675265.article",
+      "context": "Supplier suing Lidl, with Lidl allegedly using knowledge of Proctor & Associates' supply chain to forge direct deals."
+    },
+    {
+      "name": "EP Group",
+      "confidence": 0.95,
+      "source_url": "https://www.epgroup.co.uk/lidlxep",
+      "context": "EP Group is partnering with Lidl, sourcing products to Lidl specifications."
+    },
+    {
+      "name": "Promar",
+      "confidence": 0.95,
+      "source_url": "https://www.thegrocer.co.uk/news/lidl-ploughs-15bn-into-beef-supply-chain/693587.article",
+      "context": "Independent agricultural and sustainability consultancy partnering with Lidl to offer services to farms supplying beef to them."
+    },
+    {
+      "name": "Largest suppliers to Lidl",
+      "confidence": 0.7,
+      "source_url": "https://www.dw.com/en/turkey-lidl-supplier-accused-of-mistreating-unionized-staff/a-68151777",
+      "context": "One of the largest suppliers to the supermarket chain Lidl. Specific company name not provided."
+    },
+    {
+      "name": "WWF Switzerland",
+      "confidence": 0.9,
+      "source_url": "https://www.wwf.ch/en/partner/partnerschaft-lidl-international",
+      "context": "Partners with Lidl International to address ecological challenges along Lidl's value chain, suggesting WWF Switzerland provides consultancy or assessment services to Lidl."
+    },
+    {
+      "name": "Manufacturers",
+      "confidence": 0.75,
+      "source_url": "https://corporate.lidl.com.mt/sustainability/publications/landingpage_supplychain",
+      "context": "Lidl works directly with manufacturers in their own-brand range to promote a more sustainable supply chain."
+    },
+    {
+      "name": "Aldi South",
+      "confidence": 0.9,
+      "source_url": "https://www.somo.nl/save-your-tiers-for-another-day/",
+      "context": "One of seven major European supermarket chains whose Tier 1 suppliers were analyzed alongside Lidl."
+    },
+    {
+      "name": "Albert Heijn",
+      "confidence": 0.9,
+      "source_url": "https://www.somo.nl/save-your-tiers-for-another-day/",
+      "context": "One of seven major European supermarket chains whose Tier 1 suppliers were analyzed alongside Lidl."
+    },
+    {
+      "name": "Unidentified Supplier",
+      "confidence": 0.9,
+      "source_url": "https://www.cirad.fr/en/press-area/press-releases/2024/sustainable-bananas-pilot-farm-in-colombia-lidl-cirad-partnership",
+      "context": "The text mentions 'its supplier' in conjunction with Lidl, indicating a supplier relationship, but does not explicitly name the supplier company."
+    }
+  ]
+}

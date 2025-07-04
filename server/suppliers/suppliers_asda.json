@@ -1,0 +1,151 @@
+{
+  "company_name": "Asda",
+  "max_results": 30,
+  "total_suppliers": 24,
+  "suppliers": [
+    {
+      "name": "Manufacture 2030",
+      "confidence": 0.9,
+      "source_url": "https://manufacture2030.com/insights/news/2023/12/uk-grocery-retailers-partner-with-manufacture-2030",
+      "context": "Partners with Asda and other UK grocery retailers to accelerate grocery supply chain carbon reduction."
+    },
+    {
+      "name": "Aldi",
+      "confidence": 0.6,
+      "source_url": "https://manufacture2030.com/insights/news/2023/12/uk-grocery-retailers-partner-with-manufacture-2030",
+      "context": "Listed alongside Asda and other retailers as partners with Manufacture 2030, suggesting potential collaborative relationship within the context of supply chain carbon reduction efforts."
+    },
+    {
+      "name": "Co-op",
+      "confidence": 0.6,
+      "source_url": "https://manufacture2030.com/insights/news/2023/12/uk-grocery-retailers-partner-with-manufacture-2030",
+      "context": "Listed alongside Asda and other retailers as partners with Manufacture 2030, suggesting potential collaborative relationship within the context of supply chain carbon reduction efforts."
+    },
+    {
+      "name": "Lidl GB",
+      "confidence": 0.6,
+      "source_url": "https://manufacture2030.com/insights/news/2023/12/uk-grocery-retailers-partner-with-manufacture-2030",
+      "context": "Listed alongside Asda and other retailers as partners with Manufacture 2030, suggesting potential collaborative relationship within the context of supply chain carbon reduction efforts."
+    },
+    {
+      "name": "TrueCommerce",
+      "confidence": 0.95,
+      "source_url": "https://www.truecommerce.com/uk-en/press-release/asda-stores-ltd-selects-truecommerce-to-manage-its-business-transformation-initiative-as-it-separates-from-walmart/",
+      "context": "Selected by Asda to manage its business transformation initiative."
+    },
+    {
+      "name": "Neutral Vendors",
+      "confidence": 0.75,
+      "source_url": "https://asdagroceries.scene7.com/is/content/asdagroceries/Asda.com/Transparency%20and%20Supply%20Chain%20Monitoring%20Policy.pdf",
+      "context": "Provide GNFR services to Asda as a strategic partner or Neutral Vendor."
+    },
+    {
+      "name": "Asda Suppliers",
+      "confidence": 0.9,
+      "source_url": "https://corporate.asda.com/newsroom/2024/26/09/asda-launches-sustainable-supply-chain-finance-scheme",
+      "context": "Over 250 suppliers who currently use the existing finance scheme are eligible for enhanced rates of financing."
+    },
+    {
+      "name": "Your Supply Chain",
+      "confidence": 0.7,
+      "source_url": "https://asdagroceries.scene7.com/is/content/asdagroceries/Asda.com/7.%20Sites/Creating%20Change%20for%20Better/220617_ccfb_Standards%20for%20suppliers.pdf",
+      "context": "Refers to the supplier's own supply chain in the context of providing goods/services to Asda."
+    },
+    {
+      "name": "Suppliers",
+      "confidence": 0.75,
+      "source_url": "https://asdagroceries.scene7.com/is/content/asdagroceries/Corporate%20Test/Standards%20for%20Suppliers.pdf",
+      "context": "General reference to companies that supply goods/services to Asda.; ASDA encourages suppliers to improve environmental efforts.; Asda works in partnership with its suppliers to identify and address issues in supply chains.; The document refers to 'Suppliers' generally, emphasizing their role in Asda's supply chain and their need to understand risks within their own operations."
+    },
+    {
+      "name": "Manufacturers",
+      "confidence": 0.7,
+      "source_url": "https://www.shu.ac.uk/-/media/home/research/helena-kennedy-centre/projects/laundering-cotton-annexes/laundering-cotton----annex-d-dec-15.pdf",
+      "context": "Suppliers on the list of manufacturers sourcing connect with Asda."
+    },
+    {
+      "name": "Lloyds Bank",
+      "confidence": 0.9,
+      "source_url": "https://treasury-management.com/news/lloyds-bank-helps-asda-launch-supplier-finance-programme",
+      "context": "Helped Asda launch supplier finance programme."
+    },
+    {
+      "name": "Tide",
+      "confidence": 0.6,
+      "source_url": "https://treasury-management.com/news/lloyds-bank-helps-asda-launch-supplier-finance-programme",
+      "context": "Partners with Atlar, mentioned in the same article, potentially in relation to treasury and therefore indirectly related to Asda's supplier finance programme."
+    },
+    {
+      "name": "Atlar",
+      "confidence": 0.6,
+      "source_url": "https://treasury-management.com/news/lloyds-bank-helps-asda-launch-supplier-finance-programme",
+      "context": "Partners with Tide, mentioned in the same article, potentially in relation to treasury and therefore indirectly related to Asda's supplier finance programme."
+    },
+    {
+      "name": "XPO Logistics",
+      "confidence": 0.95,
+      "source_url": "https://investors.xpo.com/news-releases/news-release-details/xpo-logistics-renews-partnership-asda-provide-reverse-logistics",
+      "context": "Provides reverse logistics and asset management solutions to Asda since 2002."
+    },
+    {
+      "name": "SAP",
+      "confidence": 0.95,
+      "source_url": "https://news.sap.com/uk/2021/12/asda-selects-rise-with-sap-as-future-digital-platform-to-deliver-better-customer-experience-and-supply-chain-efficiencies/",
+      "context": "Asda selects RISE with SAP as its future digital platform."
+    },
+    {
+      "name": "HSBC UK",
+      "confidence": 0.93,
+      "source_url": "https://esgnews.com/asda-hsbc-uk-introduces-sustainability-linked-supply-chain-finance-scheme/",
+      "context": "Partners with Asda to launch a sustainability-linked enhancement to its Supply Chain Finance scheme.; Partnered with Asda for a sustainable supply chain finance scheme."
+    },
+    {
+      "name": "Dassault Syst\u00e8mes",
+      "confidence": 0.95,
+      "source_url": "https://www.itpro.com/business-strategy/digital-transformation/369180/asda-to-transform-its-delivery-services-with-immersive-logistics-software",
+      "context": "French software firm partnering with Asda to transform its delivery services through digital transformation."
+    },
+    {
+      "name": "PorkLink",
+      "confidence": 0.9,
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0148296320305713",
+      "context": "Mentioned as part of the ASDA PorkLink supply chain in Scotland, implying a supplier relationship for pork."
+    },
+    {
+      "name": "D.E. Brand",
+      "confidence": 0.95,
+      "source_url": "https://www.toscaltd.com/blog/plastic-pallets-from-polymer-logistics-give-fresh-produce-supply-chain-a-lift/",
+      "context": "Supplier of quality Brassica vegetables to Asda."
+    },
+    {
+      "name": "HSBC",
+      "confidence": 0.9,
+      "source_url": "https://www.linkedin.com/posts/karl-fuhrmann_look-forward-to-catching-up-with-everyone-activity-7266791401588146176-645U",
+      "context": "Partnering with Asda to offer enhanced supply chain finance solutions to Asda's suppliers."
+    },
+    {
+      "name": "Virtualstock",
+      "confidence": 0.95,
+      "source_url": "https://www.virtualstock.com/news/virtualstocks-2024-a-year-of-big-wins",
+      "context": "Partnership with ASDA to transform supply chain operations."
+    },
+    {
+      "name": "Simply Supply Chain",
+      "confidence": 0.9,
+      "source_url": "https://info.simply-sc.com/good-faith-receiving-gfr",
+      "context": "Partnership with Simply Supply Chain's Drop and Drive Supply Group mentioned in relation to ASDA Logistics."
+    },
+    {
+      "name": "Sustainable Fisheries Partnership",
+      "confidence": 0.75,
+      "source_url": "https://sustainablefish.org/impact-initiatives/protecting-ocean-wildlife/reducing-bycatch/bycatch-audits/",
+      "context": "Organization conducting bycatch audits, implying a service relationship with Asda in the context of sustainable supply chains."
+    },
+    {
+      "name": "Li & Fung",
+      "confidence": 0.95,
+      "source_url": "https://www.drapersonline.com/news/george-at-asda-to-streamline-supplier-base",
+      "context": "Increased partnership with Asda."
+    }
+  ]
+}

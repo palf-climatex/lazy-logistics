@@ -1,0 +1,17 @@
+# Supplier Ignore List
+# Add supplier names here to exclude them from extraction results
+# One supplier name per line
+# Lines starting with # are comments
+
+# Common false positives
+Unknown Supplier
+Generic Supplier
+Test Supplier
+Mock Supplier
+Example Corp
+Sample Company 
+Manufacture 2030
+Manufacturers
+SPS Commerce
+Suppliers
+TrueCommerce

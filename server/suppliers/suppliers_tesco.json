@@ -1,0 +1,139 @@
+{
+  "company_name": "Tesco",
+  "max_results": 30,
+  "total_suppliers": 22,
+  "suppliers": [
+    {
+      "name": "Manufacture 2030",
+      "confidence": 0.95,
+      "source_url": "https://manufacture2030.com/insights/news/2023/12/uk-grocery-retailers-partner-with-manufacture-2030",
+      "context": "Strategic partner to reduce greenhouse gas (GHG) emissions across Tesco's supply chain."
+    },
+    {
+      "name": "Hundreds of food suppliers",
+      "confidence": 0.93,
+      "source_url": "https://champions123.org/release-major-food-retailers-providers-join-new-10x20x30-food-loss-and-waste-initiative",
+      "context": "The text mentions Tesco working in partnership with hundreds of food suppliers to tackle food waste.; Tesco is working in partnership with hundreds of food suppliers to tackle food waste."
+    },
+    {
+      "name": "Santander",
+      "confidence": 0.9,
+      "source_url": "https://www.anthesisgroup.com/case-studies/supporting-tesco-to-develop-uk-retails-first-sustainability-linked-supply-chain-finance-product/",
+      "context": "Finance partner of Tesco, providing supply chain finance."
+    },
+    {
+      "name": "Unknown Seafood Supplier",
+      "confidence": 0.6,
+      "source_url": "https://sustainablefish.org/press-release/tesco-joins-sustainable-fisheries-partnership-in-new-initiative-to-protect-ocean-wildlife/",
+      "context": "Supplies seafood to UK retailer Tesco; specific supplier name not mentioned in snippet."
+    },
+    {
+      "name": "Coca Cola",
+      "confidence": 0.95,
+      "source_url": "https://www.ucumberlands.edu/blog/mastering-the-art-of-supply-chain-collaboration-and-teamwork",
+      "context": "Supplier collaborating with Tesco."
+    },
+    {
+      "name": "SPS Commerce",
+      "confidence": 0.95,
+      "source_url": "https://www.spscommerce.com/eur/network/find-a-partner/view/tesco/",
+      "context": "Helps suppliers manage Tesco vendor requirements; has built over 1,000,000 connections related to Tesco."
+    },
+    {
+      "name": "Shelf Engine",
+      "confidence": 0.7,
+      "source_url": "https://www.shelfengine.com/news/ex-tesco-senior-exec-john-burry-joins-shelf-engine/",
+      "context": "Ex-Tesco Senior Exec John Burry joins Shelf Engine to lead strategy and new partnerships, suggesting a potential partnership or supply chain relationship."
+    },
+    {
+      "name": "Suppliers",
+      "confidence": 0.82,
+      "source_url": "https://www.esgtoday.com/tesco-launching-sustainability-linked-supply-chain-finance-program/",
+      "context": "Tesco is offering suppliers financing rates based on their carbon data, suggesting a supply chain relationship.; Mentioned in the context of meeting Tesco sustainability requirements and sustainable sourcing."
+    },
+    {
+      "name": "Renewable Energy Asset Suppliers",
+      "confidence": 0.7,
+      "source_url": "https://veridion.com/blog-posts/supplier-relationship-management-mistakes/",
+      "context": "Preferred suppliers providing renewable energy assets to farmers in Tesco's supply chain."
+    },
+    {
+      "name": "Farmers",
+      "confidence": 0.9,
+      "source_url": "https://d3.harvard.edu/platform-rctom/submission/apps-on-apps-tesco-uses-digitalization-to-tackle-food-waste/",
+      "context": "Part of the supply chain mentioned in relation to Tesco's food waste initiatives."
+    },
+    {
+      "name": "Distributors",
+      "confidence": 0.9,
+      "source_url": "https://d3.harvard.edu/platform-rctom/submission/apps-on-apps-tesco-uses-digitalization-to-tackle-food-waste/",
+      "context": "Part of the supply chain mentioned in relation to Tesco's food waste initiatives."
+    },
+    {
+      "name": "E2open",
+      "confidence": 0.95,
+      "source_url": "https://investors.e2open.com/news/news-details/2021/E2open-to-Modernize-Tescos-Global-Logistics-and-Transportation-Management/default.aspx",
+      "context": "Modernizing Tesco's global logistics and transportation management"
+    },
+    {
+      "name": "Tesco tier 1 suppliers",
+      "confidence": 0.9,
+      "source_url": "https://views-voices.oxfam.org.uk/2023/08/more-women-leaders-supply-chains-gender-toolkit/",
+      "context": "Companies consulted in the development of the Supplier Gender Toolkit. These are identified as tier 1 suppliers to Tesco.; The text mentions 'Tesco-suppliers-commit-to-sharing-food-waste-data', indicating suppliers of Tesco."
+    },
+    {
+      "name": "Carrefour",
+      "confidence": 0.82,
+      "source_url": "https://www.forbes.com/sites/brittainladd/2018/07/02/tesco-and-carrefour-how-their-strategic-partnership-can-grow/",
+      "context": "Partnering with Tesco to form T&C Logistics; Mentioned alongside Tesco and Walmart, implying a peer relationship or participation in a similar event/initiative."
+    },
+    {
+      "name": "TESCO Metering",
+      "confidence": 0.95,
+      "source_url": "https://www.tescometering.com/news/pilot-partner-in-nemas-make-it-american-program/",
+      "context": "TESCO Metering is recognized as one of the first manufacturers to achieve certification in the National Electrical program; the article title also suggests a partnership."
+    },
+    {
+      "name": "CP Foods",
+      "confidence": 0.95,
+      "source_url": "https://www.ituc-csi.org/IMG/pdf/pdffrontlines_scandal_en-2.pdf",
+      "context": "Supplier of shrimp feed mills in Thailand for Tesco."
+    },
+    {
+      "name": "Lombard",
+      "confidence": 0.9,
+      "source_url": "https://www.natwestgroup.com/news-and-insights/news-room/press-releases/enterprise/2024/mar/tesco-and-natwest-join-forces-to-help-farmers-reduce-costs-and-d.html",
+      "context": "Partnership with Tesco and its farmers. Lombard is likely a supplier of financial services."
+    },
+    {
+      "name": "Walmart",
+      "confidence": 0.7,
+      "source_url": "https://www.tandfonline.com/doi/full/10.1080/14747731.2017.1304008",
+      "context": "Mentioned alongside Tesco and Carrefour, implying a peer relationship or participation in a similar event/initiative."
+    },
+    {
+      "name": "Companies located in its supply chain",
+      "confidence": 0.7,
+      "source_url": "https://www.edie.net/tesco-links-supplier-financial-support-to-environmental-goals/",
+      "context": "Refers to companies that are part of Tesco's supply chain, implying they supply goods or services."
+    },
+    {
+      "name": "Partner suppliers",
+      "confidence": 0.75,
+      "source_url": "https://orca.cardiff.ac.uk/id/eprint/55302/1/Article%2044.pdf",
+      "context": "Collaborative partnerships 'Partner' suppliers to Tesco commonly collaborate to produce."
+    },
+    {
+      "name": "Lidl",
+      "confidence": 0.7,
+      "source_url": "https://www.agriplace.com/post/lidl-aldi-and-tesco-how-to-meet-retailer-standards-and-ensure-future-proof-supply-chains",
+      "context": "Mentioned alongside Tesco in the context of meeting retailer standards and ensuring supply chains."
+    },
+    {
+      "name": "Aldi",
+      "confidence": 0.7,
+      "source_url": "https://www.agriplace.com/post/lidl-aldi-and-tesco-how-to-meet-retailer-standards-and-ensure-future-proof-supply-chains",
+      "context": "Mentioned alongside Tesco in the context of meeting retailer standards and ensuring supply chains."
+    }
+  ]
+}

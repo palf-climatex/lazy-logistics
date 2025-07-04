@@ -1,0 +1,196 @@
+{
+  "summary": {
+    "total_supermarkets": 7,
+    "total_common_suppliers": 10,
+    "ignore_candidates": 7,
+    "product_suppliers": 3
+  },
+  "common_suppliers_by_frequency": {
+    "7": [
+      {
+        "name": "Manufacture 2030",
+        "locations": [
+          "Tesco",
+          "Lidl",
+          "Waitrose",
+          "Morrisons",
+          "Aldi",
+          "Sainsbury's",
+          "Asda"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "name": "SPS Commerce",
+        "locations": [
+          "Tesco",
+          "Lidl",
+          "Aldi"
+        ]
+      },
+      {
+        "name": "Blue Yonder",
+        "locations": [
+          "Waitrose",
+          "Morrisons",
+          "Sainsbury's"
+        ]
+      }
+    ],
+    "6": [
+      {
+        "name": "Suppliers",
+        "locations": [
+          "Tesco",
+          "Waitrose",
+          "Morrisons",
+          "Aldi",
+          "Sainsbury's",
+          "Asda"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "name": "Aldi",
+        "locations": [
+          "Tesco",
+          "Lidl",
+          "Sainsbury's",
+          "Asda"
+        ]
+      },
+      {
+        "name": "TrueCommerce",
+        "locations": [
+          "Lidl",
+          "Waitrose",
+          "Morrisons",
+          "Asda"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "name": "Co-op",
+        "locations": [
+          "Lidl",
+          "Asda"
+        ]
+      },
+      {
+        "name": "Manufacturers",
+        "locations": [
+          "Lidl",
+          "Asda"
+        ]
+      },
+      {
+        "name": "Graphic Packaging",
+        "locations": [
+          "Morrisons",
+          "Sainsbury's"
+        ]
+      },
+      {
+        "name": "Tesco",
+        "locations": [
+          "Morrisons",
+          "Sainsbury's"
+        ]
+      }
+    ]
+  },
+  "categorized_suppliers": {
+    "ignore_candidates": [
+      {
+        "name": "Manufacture 2030",
+        "locations": [
+          "Tesco",
+          "Lidl",
+          "Waitrose",
+          "Morrisons",
+          "Aldi",
+          "Sainsbury's",
+          "Asda"
+        ]
+      },
+      {
+        "name": "SPS Commerce",
+        "locations": [
+          "Tesco",
+          "Lidl",
+          "Aldi"
+        ]
+      },
+      {
+        "name": "Suppliers",
+        "locations": [
+          "Tesco",
+          "Waitrose",
+          "Morrisons",
+          "Aldi",
+          "Sainsbury's",
+          "Asda"
+        ]
+      },
+      {
+        "name": "TrueCommerce",
+        "locations": [
+          "Lidl",
+          "Waitrose",
+          "Morrisons",
+          "Asda"
+        ]
+      },
+      {
+        "name": "Co-op",
+        "locations": [
+          "Lidl",
+          "Asda"
+        ]
+      },
+      {
+        "name": "Manufacturers",
+        "locations": [
+          "Lidl",
+          "Asda"
+        ]
+      },
+      {
+        "name": "Tesco",
+        "locations": [
+          "Morrisons",
+          "Sainsbury's"
+        ]
+      }
+    ],
+    "product_suppliers": [
+      {
+        "name": "Blue Yonder",
+        "locations": [
+          "Waitrose",
+          "Morrisons",
+          "Sainsbury's"
+        ]
+      },
+      {
+        "name": "Aldi",
+        "locations": [
+          "Tesco",
+          "Lidl",
+          "Sainsbury's",
+          "Asda"
+        ]
+      },
+      {
+        "name": "Graphic Packaging",
+        "locations": [
+          "Morrisons",
+          "Sainsbury's"
+        ]
+      }
+    ]
+  }
+}
